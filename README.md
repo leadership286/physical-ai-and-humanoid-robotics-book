@@ -1,41 +1,44 @@
-# Website
+# Physical AI & Humanoid Robotics — Interactive Digital Book
 
-This website is built using [Docusaurus](https://docusaurus.io/), a modern static website generator.
+This repository contains the complete source code of an interactive **Docusaurus-powered digital book** created for the **GIAIC Hackathon**.  
+The book provides a clean, responsive, and easy-to-navigate learning experience covering the fundamentals of **Physical AI**, **Humanoid Robotics**, and related technologies.
 
-## Installation
+---
+
+## 🚀 Features
+- Fully responsive Docusaurus documentation website  
+- Clean chapter-wise structure  
+- Custom homepage banner & theme  
+- Markdown (MDX)-based content for easy editing  
+- Sidebar navigation for all chapters  
+- Light & dark mode support  
+- Ready for deployment on GitHub Pages or Vercel  
+
+---
+
+## 📘 Topics Covered
+- Introduction to Physical AI  
+- Components of Humanoid Robotics  
+- Robotics Mechanics  
+- Sensors & Actuators  
+- Control Systems  
+- AI Integration  
+- Real-world Applications  
+- And more…  
+
+---
+
+## 🛠 Tech Stack
+- **Docusaurus 3**
+- **React.js**
+- **MDX / Markdown**
+- **Node.js**
+- **GitHub Pages / Vercel**
+
+---
+
+## 📦 Installation & Local Development
 
 ```bash
-yarn
-```
-
-## Local Development
-
-```bash
-yarn start
-```
-
-This command starts a local development server and opens up a browser window. Most changes are reflected live without having to restart the server.
-
-## Build
-
-```bash
-yarn build
-```
-
-This command generates static content into the `build` directory and can be served using any static contents hosting service.
-
-## Deployment
-
-Using SSH:
-
-```bash
-USE_SSH=true yarn deploy
-```
-
-Not using SSH:
-
-```bash
-GIT_USER=<Your GitHub username> yarn deploy
-```
-
-If you are using GitHub pages for hosting, this command is a convenient way to build the website and push to the `gh-pages` branch.
+npm install
+npm start
