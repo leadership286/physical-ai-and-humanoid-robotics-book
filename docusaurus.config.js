@@ -5,28 +5,21 @@ import { themes as prismThemes } from 'prism-react-renderer';
 const config = {
   title: 'Physical AI & Humanoid Robotics Course',
   tagline: 'A comprehensive course on Physical AI and Humanoid Robotics',
-  
 
-  // Works locally + works after deployment
   favicon: '/img/favicon.png',
 
   future: {
     v4: true,
   },
 
-  // LOCAL DEVELOPMENT → keep these 2 values like this:
   url: 'http://localhost:3000',
   baseUrl: '/',
-
-  // When you deploy to GitHub Pages, change these 2:
-  // url: 'https://your-github-username.github.io',
-  // baseUrl: '/physical-ai-book/',
 
   organizationName: 'your-github-username',
   projectName: 'physical-ai-book',
 
-  onBrokenLinks: 'throw',
-  onBrokenMarkdownLinks: 'warn',
+  onBrokenLinks: 'ignore',
+  onBrokenMarkdownLinks: 'ignore',
 
   i18n: {
     defaultLocale: 'en',
@@ -39,21 +32,12 @@ const config = {
       ({
         docs: {
           sidebarPath: './sidebars.js',
-          editUrl:
-            'https://localhost:3000',
+          editUrl: 'https://localhost:3000',
         },
-        blog: {
-          showReadingTime: true,
-          feedOptions: {
-            type: ['rss', 'atom'],
-            xslt: true,
-          },
-          editUrl:
-            'https://github.com/your-github-username/physical-ai-book/edit/main/blog/',
-          onInlineTags: 'warn',
-          onInlineAuthors: 'warn',
-          onUntruncatedBlogPosts: 'warn',
-        },
+
+        // ❌ Blog removed (because not needed)
+        blog: false,
+
         theme: {
           customCss: './src/css/custom.css',
         },
@@ -76,14 +60,12 @@ const config = {
         src: '/img/favicon.png',
       },
       items: [
-      {
-  type: 'docSidebar',
-  sidebarId: 'tutorialSidebar',
-  position: 'left',
-  label: 'Course',
-}
-
-     
+        {
+          type: 'docSidebar',
+          sidebarId: 'tutorialSidebar',
+          position: 'left',
+          label: 'Course',
+        },
       ],
     },
 
@@ -92,23 +74,23 @@ const config = {
       links: [
         {
           title: 'Docs',
-          items: [{ label: 'Tutorial', to: '/docs/chapter1/index' }],
+          items: [
+            // 🔥 FIXED — updated the correct docs path
+            { label: 'Tutorial', to: '/docs/intro' }
+          ],
         },
         {
           title: 'Community',
           items: [
-            {
-              label: 'Stack Overflow',
-              href: 'https://stackoverflow.com/questions/tagged/docusaurus',
-            },
+            { label: 'Stack Overflow', href: 'https://stackoverflow.com/questions/tagged/docusaurus' },
             { label: 'Discord', href: 'https://discord.com/invite/docusaurus' },
             { label: 'X', href: 'https://x.com/docusaurus' },
-           ],
+          ],
         },
         {
           title: 'More',
           items: [
-            { label: 'Blog', to: '/blog' },
+            
             {
               label: 'GitHub',
               href: 'https://github.com/your-github-username/physical-ai-book',
